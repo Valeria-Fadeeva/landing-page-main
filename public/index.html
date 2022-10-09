@@ -39,23 +39,21 @@
         <link rel="stylesheet" href="assets/css/style.css">
 
         <!-- Yandex.Metrika counter -->
-        <script type="text/javascript">
-            (function(m, e, t, r, i, k, a) {
-                m[i] = m[i] || function() {(m[i].a = m[i].a || []).push(arguments);};
-                m[i].l = 1 * new Date(); k = e.createElement(t), a = e.getElementsByTagName(t)[0], k.async = 1, k.src = r, a.parentNode.insertBefore(k, a);
-            })
-                (window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym");
+        <script type="text/javascript" >
+        (function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
+        m[i].l=1*new Date();
+        for (var j = 0; j < document.scripts.length; j++) {if (document.scripts[j].src === r) { return; }}
+        k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)})
+        (window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym");
 
-            ym(84386332, "init", {
-                clickmap: true,
-                trackLinks: true,
-                accurateTrackBounce: true,
-                webvisor: true
-            });
+        ym(84386332, "init", {
+                clickmap:true,
+                trackLinks:true,
+                accurateTrackBounce:true,
+                webvisor:true
+        });
         </script>
-        <noscript>
-            <div><img src="https://mc.yandex.ru/watch/84386332" style="position:absolute; left:-9999px;" alt=""></div>
-        </noscript>
+        <noscript><div><img src="https://mc.yandex.ru/watch/84386332" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
         <!-- /Yandex.Metrika counter -->
     </head>
     <body>
@@ -68,25 +66,27 @@
                 </div>
             </div>
 
-            <div class="first_block_content">
-                <div class="first_block_content_header">
-                    Давай знакомиться!
+            <div class="main_photo_block">
+                <div class="photo_block photo_block_1">
                 </div>
+            </div>
 
-                <div class="main_photo_block">
-                    <div class="photo_block photo_block_1">
-                    </div>
-                </div>
+            <div class="first_block_content_header">
+                Меня зовут Валерия (Valeria Fadeeva)
+            </div>
 
-                <div class="first_block_content_header">
-                    Меня зовут Валерия (Valeria Fadeeva)
-                </div>
+            <div class="first_block_content_text">
+                <ol>
+                    <li>Я имею хорошие знания по языкам программирования, базам данных, сетям, устройству компьютера, работе операционных систем,
+                    виртуализации.</li>
+                    <li>Изучаю и программирую используя Python, Rust, Kotlin, TypeScript, PostgreSQL, SQLite.</li>
+                    <li>Создаю продукты для себя и для людей, делюсь знаниями в дискорд-сообществе. Об этом далее.</li>
+                </ol>
+            </div>
 
-                <div class="first_block_content_text">
-                        <input type="button" value="Подробнее" class="button" data-url="https://valeria.fadeeva.me">
-                        <input type="button" value="Boosty" class="button" data-url="https://boosty.to/valeria.fadeeva">
-                        <input type="button" value="GitHub" class="button" data-url="https://github.com/Valeria-Fadeeva">
-                </div>
+            <div class="first_block_content_text">
+                    <input type="button" value="Boosty" class="button" data-url="https://boosty.to/valeria.fadeeva">
+                    <input type="button" value="GitHub" class="button" data-url="https://github.com/Valeria-Fadeeva">
             </div>
 
         </div>

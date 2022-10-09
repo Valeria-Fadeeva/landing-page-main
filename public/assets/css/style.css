@@ -117,7 +117,7 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
+    justify-content: space-evenly;
 }
 
 .first_block_header {
@@ -127,8 +127,6 @@ body {
 
 .first_block_header > div {
     height: 2rem;
-    padding-top: 1.5rem;
-    padding-bottom: 1.5rem;
 }
 
 .first_block_content {
@@ -208,5 +206,6 @@ li {
 .button {
     font-size: calc(var(--font-size_button) * 0.6);
     padding: 1rem;
-    margin: 0.5rem;
+    margin-left: 0.5rem;
+    margin-right: 0.5rem;
 }
