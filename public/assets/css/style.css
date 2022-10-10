@@ -2,13 +2,16 @@
     --vw100: 100vw;
     --vh100: 100vh;
     --position-top_photo: calc((var(--vh100) / 24));
-    --font-size_header: 1rem;
     --font-size: 0.8rem;
     --font-size_button: 1rem;
-    --color-0: hsl(0, 0%, 50%);
-    --color-1: hsl(159, 17%, 56%);
-    --color-2: hsl(34, 40%, 76%);
+    --font-color-header: hsl(100, 40%, 60%);
+    --font-color: hsl(35, 40%, 75%);
+    --color-0: hsl(0, 0%, 20%);
+    --color-1: hsl(0, 0%, 30%);
+    --color-2: hsl(0, 0%, 50%);
     --color-3: hsl(0, 0%, 85%);
+    --color-4: hsl(35, 40%, 75%);
+    --color-5: hsl(160, 20%, 55%);
 }
 
 /*landscape*/
@@ -24,33 +27,29 @@
 
 @media all and (min-width: 360px) and (orientation: landscape) {
     :root {
-        --font-size_header: 1rem;
         --font-size: 0.8rem;
-        --font-size_button: 0.8rem;
+        --font-size_button: 1rem;
     }
 }
 
 @media all and (min-width: 576px) and (orientation: landscape) {
     :root {
-        --font-size_header: 1.0rem;
-        --font-size: 1.0rem;
+        --font-size: 0.8rem;
         --font-size_button: 1.0rem;
     }
 }
 
 @media all and (min-width: 768px) and (orientation: landscape) {
     :root {
-        --font-size_header: 1.2rem;
-        --font-size: 1.0rem;
+        --font-size: 0.8rem;
         --font-size_button: 1.0rem;
     }
 }
 
 @media all and (min-width: 992px) and (orientation: landscape) {
     :root {
-        --font-size_header: 1.5rem;
-        --font-size: 1.2rem;
-        --font-size_button: 1.2rem;
+        --font-size: 0.8rem;
+        --font-size_button: 1rem;
     }
 }
 
@@ -67,15 +66,13 @@
 
 @media all and (min-width: 360px) and (orientation: portrait) {
     :root {
-        --font-size_header: 1.2rem;
-        --font-size: 1rem;
+        --font-size: 0.8rem;
         --font-size_button: 1rem;
     }
 }
 
 @media all and (min-width: 576px) and (orientation: portrait) {
     :root {
-        --font-size_header: 1rem;
         --font-size: 0.8rem;
         --font-size_button: 1rem;
     }
@@ -83,17 +80,15 @@
 
 @media all and (min-width: 768px) and (orientation: portrait) {
     :root {
-        --font-size_header: 1.5rem;
-        --font-size: 1.2rem;
-        --font-size_button: 1.2rem;
+        --font-size: 0.8rem;
+        --font-size_button: 1rem;
     }
 }
 
 @media all and (min-width: 992px) and (orientation: portrait) {
     :root {
-        --font-size_header: 2.5rem;
-        --font-size: 2.2rem;
-        --font-size_button: 2.2rem;
+        --font-size: 0.8rem;
+        --font-size_button: 1rem;
     }
 }
 
@@ -103,8 +98,13 @@ body {
     margin: 0px;
     padding: 0px;
     font-size: var(--font-size);
+    color: var(--font-color);
+    background-color: var(--color-1);
 }
 
+h1, h2, h3, h4, h5, h6 {
+    color: var(--font-color-header);
+}
 
 /* FIRST BLOCK */
 
@@ -113,25 +113,14 @@ body {
     height: 100%;
     margin: 0px;
     padding: 0px;
-    background-color: var(--color-0);
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: space-evenly;
 }
 
-.first_block_header {
-    height: 5rem;
-    font-size: var(--font-size_header);
-}
-
-.first_block_header > div {
-    height: 2rem;
-}
-
 .first_block_content {
     width: 70vw;
-    font-size: var(--font-size);
     display:flex;
     flex-direction: column;
     align-items: center;
@@ -139,8 +128,6 @@ body {
 }
 
 .first_block_content_header {
-    margin-bottom: 1rem;
-    font-size: var(--font-size_header);
     text-align: center;
     align-self: center;
     word-wrap: break-word;
@@ -148,7 +135,6 @@ body {
 }
 
 .first_block_content_text {
-    font-size: var(--font-size);
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -205,7 +191,9 @@ li {
 
 .button {
     font-size: calc(var(--font-size_button) * 0.6);
-    padding: 1rem;
+    padding: 0.5rem;
     margin-left: 0.5rem;
     margin-right: 0.5rem;
+    background-color: var(--font-color-header);
+    border-color: var(--font-color-header);
 }
