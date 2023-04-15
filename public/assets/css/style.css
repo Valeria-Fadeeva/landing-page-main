@@ -3,6 +3,7 @@
     --vh100: 100vh;
     --position-top_photo: calc((var(--vh100) / 24));
     --font-size: 0.8rem;
+    --font-size_header: 1rem;
     --font-size_button: 1rem;
     --font-color-header: hsl(100, 40%, 60%);
     --font-color: hsl(35, 40%, 75%);
